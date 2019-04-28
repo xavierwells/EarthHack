@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:700);
+
+html, body {
+  height:100%;
+  padding:0;
+  margin:0;
+  font-family: Raleway,sans-serif;
+  color:#FFF;
+}
+h1 {
+  margin:0;
+  display: table-cell;
+  vertical-align: middle;
+  text-align:center;
+  letter-spacing: -4px;
+  font-size:100px;
+  font-weight:700;
+  text-transform:uppercase;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+}
+h1::before, h1::after {
+    width: 220px;
+    height: 1px;
+    border-top:4px double #FFF;
+    content:"";
+    display:block;
+    margin:20px auto;
+}
+header {
+  height: calc(100% - 65px);
+  background:#333;
+  
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+  perspective-origin: center bottom;
+}
+.hero {
+  position:relative;
+  background:#333 url(https://media.giphy.com/media/WS0Z51IiviHukFDL61/giphy.gif) no-repeat center center;
+  background-size:cover;
+  height: 100%;
+  width:100%;
+  
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  
+  display:table;
+}
+.hero .overlay {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  opacity:0;
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+}
+
+nav {
+  background:white;
+  height:65px;
+  color: #79c365;
+}
+nav.fixed {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+}
+.sticky-wrapper {
+  height:65px;
+}
+nav ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+  text-align:center;
+}
+nav ul li {
+  display:inline-block;
+}
+nav ul a {
+  height:65px;
+  line-height:65px;
+  padding:10px 15px;
+  color:#A1A1A1;
+  
+  
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration:none;
+}
+
+section {
+  height: 100%;
+  width:100%;
+  display:table;
+}
+section#item1 {
+  background:#7b84c1 url("https://media.discordapp.net/attachments/546379030694330379/571909591793795072/pencik.png?width=256&height=473");
+}
+section#item2 {
+  background:#79c365  url("https://media.discordapp.net/attachments/546379030694330379/571770754589393019/just_icons.png?width=811&height=469");
+}
+section#item3 {
+  background:#7b84c1 url("https://media.discordapp.net/attachments/546379030694330379/571891989067464717/pixil-frame-0_2.png?width=468&height=468") repeat center;
+}
+
+h2{
+  font-family: Raleway,sans-serif;
+  color:#FFF;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: left;
+  margin-right: auto; 
+  margin-left: 10%;
+}
+h3{
+  text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size:100px;
+  font-weight:700;
+  text-transform:uppercase;
+}
+
+h4{
+  font-size:50px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-weight:700;
+  font-family: Raleway,sans-serif;
+  color:#FFF;
+  text-align: center;
+  margin-right: auto;
+}
+
+td{
+	text-align: center;
+	border: 1px solid black;
+	width:0.1%;
+white-space: nowrap;
+}
+
+th{
+	border: 1px solid black;
+	white-space:nowrap;
+}
+
+table {
+  background-color: rgba(0,0,0,.5);
+  border: 1px solid black;
+  border-collapse: collapse;
+  width:100%;
+}
+
+img{
+  width: 50%;
+}
+.clickme {
+  font-family: Raleway,sans-serif;
+  color: #A1A1A1;
+  background-color: white;
+  font-size: 16px;
+}

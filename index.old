@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Xpire</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">  
+</head>
+
+<body>
+  <header id="home">
+  <div class="hero">
+    <div class="overlay"></div>
+    <h1>Xpire</h1>
+  </div>
+</header>
+<div class="sticky-wrapper">
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#item1">Inventory</a></li>
+    <li><a href="#item2">Upcoming Expires</a></li>
+  </ul>
+</nav>
+</div>
+
+<section id="item1">
+<h3>Add Items</h3>
+<h2>
+<form method="POST" action="db_connection.php">
+      <p>Quantity: <input type="number" id="quantity" min="1"/></p>
+      <p>Description of item: <input type="text" id="description"/></p>
+      <p>Expiration Date: <input type="date" id="expires"/></p>
+	  <input type="submit" value="Submit">
+</form>
+</h2>
+</section>
+
+<section id="item2">
+  <h3>Inventory</h3>
+    <ul id="dynamic-list"></ul>
+</section>
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="js/index.js"></script>
+  <script src="js/action.js"></script>
+
+</body>
+
+</html>

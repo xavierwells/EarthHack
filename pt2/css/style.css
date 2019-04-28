@@ -1,0 +1,350 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:700);
+
+img{
+  text-align: center;
+  width: 50%;
+}
+#teknacopic{
+  width: auto;
+}
+html, body {
+  height:100%;
+  padding:0;
+  margin:0;
+  font-family: Raleway,sans-serif;
+  color:#FFF;
+}
+h1 {
+  margin:0;
+  display: table-cell;
+  vertical-align: middle;
+  text-align:center;
+  letter-spacing: -4px;
+  font-size:100px;
+  font-weight:700;
+  text-transform:uppercase;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+}
+h1::before, h1::after {
+    width: 220px;
+    height: 1px;
+    border-top:4px double #FFF;
+    content:"";
+    display:block;
+    margin:20px auto;
+}
+
+h2{
+  text-align: center;
+  letter-spacing: -4px;
+  font-size:100px;
+  font-weight:700;
+  text-transform:uppercase;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+}
+
+h3{
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 25px;
+
+
+}
+
+header {
+  height: calc(100% - 65px);
+  background:#333;
+  
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+  perspective-origin: center bottom;
+}
+.hero {
+  position:relative;
+  background:black no-repeat center center;
+  background-size: 650px 500px;
+  background-repeat: no-repeat;
+  height: 100%;
+  width:100%;
+  
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  
+  display:table;
+}
+.hero .overlay {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  opacity:0;
+  background-color: black;
+}
+
+nav {
+  background: rgb(49,30,96);
+  height:65px;
+}
+nav.fixed {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+}
+.sticky-wrapper {
+  height:65px;
+}
+nav ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+  text-align:center;
+}
+nav ul li {
+  display:inline-block;
+}
+nav ul a {
+  height:65px;
+  line-height:65px;
+  padding:10px 15px;
+  color: rgb(128,239,166);;
+  
+  
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration:none;
+}
+
+section {
+  height: 100%;
+  width:100%;
+  display:table;
+}
+section#item1 {
+  background: rgb(128,239,166);
+}
+section#item2 {
+  background: rgb(220,50,140);
+}
+section#item3 {
+  background: rgb(49,30,96);
+}
+
+
+/*about*/
+
+
+/* CSS browser */
+@media all and (max-width: 1300px) {
+  .wrapper {
+    width:100%;
+    padding:0;
+  }
+}
+@media all and (max-width:900px) {
+  .half {
+    width:auto;
+    display:block;
+    margin-bottom:20px;
+  }
+  .half.left .padding, .half.right .padding, .padding {
+    padding:20px;
+  }
+
+}
+@media all and (max-width:500px) {
+  }
+  .half {
+    margin-bottom:10px;
+
+}
+
+/*services*/
+/* 1 column: 320px */
+.autowide {
+  margin: 0 auto;
+  width: 98%;
+}
+
+.autowide .module {
+  text-align: center;
+  background-color: transparent;
+  border-radius: .25rem;
+  margin-bottom: 1rem;
+  font-size: 25px;
+}
+.autowide .module p {
+  padding: .25rem .75rem;
+}
+
+/* 2 columns: 600px */
+@media only screen and (min-width: 600px) {
+  .autowide .module {
+
+    float: left;
+    margin-right: 2.564102564102564%;
+    width: 48.717948717948715%;
+  }
+  .autowide .module:nth-child(2n+0) {
+    margin-right: 0;
+  }
+}
+
+/* 3 columns: 768px */
+@media only screen and (min-width: 768px) {
+  .autowide .module {
+    width: 31.623931623931625%;
+  }
+  .autowide .module:nth-child(2n+0) {
+    margin-right: 2.564102564102564%;
+  }
+  .autowide .module:nth-child(3n+0) {
+    margin-right: 0;
+  }
+}
+
+/* 4 columns: 992px and up */
+@media only screen and (min-width: 992px) {
+  .autowide .module {
+    width: 23.076923076923077%;
+  }
+  .autowide .module:nth-child(3n+0) {
+    margin-right: 2.564102564102564%;
+  }
+  .autowide .module:nth-child(4n+0) {
+    margin-right: 0;
+  }
+}
+
+
+/*Contact*/
+.contact {
+  max-width:400px;
+  width:100%;
+  margin:0 auto;
+  position:relative;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+  background:transparent;
+  padding:25px;
+  margin:50px 0;
+}
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+  width:100%;
+  border:1px solid #CCC;
+  background:#FFF;
+  margin:0 0 5px;
+  padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+  -webkit-transition:border-color 0.3s ease-in-out;
+  -moz-transition:border-color 0.3s ease-in-out;
+  transition:border-color 0.3s ease-in-out;
+  border:1px solid #AAA;
+}
+
+#contact textarea {
+  height:100px;
+  max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+  cursor:pointer;
+  width:106%;
+  border:none;
+  background: rgb(128,239,166);
+  color: rgb(49,30,96);
+  margin:0 0 5px;
+  padding:10px;
+  font-size:20px;
+  text-align: center;
+}
+
+#contact button[type="submit"]:hover {
+  color: rgb(49,30,96);
+  background: rgb(220,50,140);
+  -webkit-transition:background 0.3s ease-in-out;
+  -moz-transition:background 0.3s ease-in-out;
+  transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+  outline:0;
+  border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+/*Social Media*/
+#share-buttons{
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+#share-buttons img {
+width: 35px;
+padding: 15px;
+display: inline-block;
+
+}
+
+footer{
+  background: rgb(220,50,140);
+  text-align: center; 
+  font-size: 15px;
+  color: white;
+  padding: 1px;
+}
+
+/*Pricing*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 10px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(49,30,96);
+}
